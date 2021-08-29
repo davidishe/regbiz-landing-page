@@ -1,0 +1,126 @@
+.mat-chip-list-wrapper {
+  width: 100% !important;
+}
+
+textarea {
+  resize: vertical !important;
+}
+
+.mat-btn-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mat-btn-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+  color: var(--error) !important;
+}
+
+.mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: var(--error) !important;
+}
+
+.mat-form-field .mat-select.mat-select-invalid .mat-select-arrow {
+  color: var(--error) !important;
+}
+
+.mat-form-field-wrapper {
+  top: 25px !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-flex {
+  // margin-top: -0.2em !important;
+}
+
+.mat-dialog-content {
+  max-height: 80vh !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 0.9em 0 1.1em 0 !important;
+}
+
+mat-form-field {
+  // display: flex !important;
+  vertical-align: middle !important;
+  background-color: transparent !important;
+}
+
+.mat-form-field {
+  display: block !important;
+}
+
+.mat-paginator-page-size {
+  mat-form-field {
+    display: block !important;
+  }
+
+  .mat-form-field-wrapper {
+    top: 0px !important;
+    font-size: var(--standard);
+  }
+}
+
+.mat-paginator-range-label {
+  min-width: 70px;
+}
+
+label.mat-form-field-label {
+  font-size: var(--small) !important;
+}
+
+.mat-select-trigger,
+.mat-datepicker-input {
+  font-size: var(--standard) !important;
+  padding-left: 8px !important;
+}
+
+input.mat-input-element {
+  font-size: var(--standard) !important;
+  padding-left: 0px !important;
+}
+
+.address-label {
+  position: absolute;
+  top: -15px;
+  padding-left: 5px;
+  padding-right: 3px;
+  margin-left: 3px;
+  background-color: var(--background);
+}
+
+.error-color {
+  color: var(--error);
+}
+
+.error {
+  color: var(--error) !important;
+  border-color: var(--error) !important;
+}
+
+// mat-input error outline color
+::ng-deep
+  .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid
+  .mat-form-field-outline-thick {
+  color: var(--error) !important;
+  opacity: 0.8 !important;
+}
+
+// mat-input error carent color
+::ng-deep .mat-form-field-invalid .mat-input-element,
+.mat-warn .mat-input-element {
+  caret-color: var(--error) !important;
+}
+
+// mat-label error style
+::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: var(--error) !important;
+}

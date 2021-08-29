@@ -1,0 +1,146 @@
+.nav-wrapper {
+  background-color: var(--navbar-background);
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-app {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+  height: 50px;
+  font-family: var(--th);
+  font-weight: 500;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.nav-toggle {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+
+  img {
+    max-width: 140px;
+  }
+}
+
+.toggle-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  min-width: 50px;
+}
+
+.nav-content {
+  display: block;
+}
+
+.nav-item {
+  cursor: pointer;
+  vertical-align: middle;
+  align-items: center;
+  display: inline-flex;
+  padding-left: 15px;
+  padding-right: 10px;
+  border-bottom: 4px transparent solid !important;
+  height: 66px;
+  min-width: 120px;
+  justify-content: center;
+  font-weight: normal;
+
+  .svg-icon {
+    pointer-events: none;
+    position: relative;
+    top: 1px;
+    background-color: transparent;
+  }
+}
+
+.active-menu {
+  border-bottom: 4px var(--c2) solid !important;
+  color: var(--c2);
+
+  svg {
+    fill: var(--c2);
+  }
+}
+
+.spec-container-scroll-menu {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.dark-mode:hover {
+  cursor: pointer;
+  color: var(--font-hover);
+}
+
+svg:hover {
+  fill: var(--font-hover) !important;
+}
+
+.login-btn {
+  margin-left: 15px;
+}
+
+.phone {
+  margin-right: 15px;
+  min-width: 140px;
+  color: var(--font);
+  fill: var(--font);
+
+  &:hover {
+    color: var(--font-hover);
+    fill: var(--font-hover);
+  }
+}
+
+.img-wrapper {
+  max-width: 40px;
+  display: flex;
+  border: 0px black solid;
+  border-radius: 20px;
+  box-shadow: var(--shadow-hover);
+  overflow: hidden;
+
+  img {
+    height: 30px;
+    position: relative;
+    z-index: -1;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .login-btn {
+    border-top: 0px transparent solid !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .phone {
+    display: none;
+  }
+}
+
+@media (max-width: 470px) {
+  .nav-title-text {
+    display: none;
+  }
+}

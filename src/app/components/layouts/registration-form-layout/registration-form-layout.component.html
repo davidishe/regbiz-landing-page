@@ -1,0 +1,31 @@
+<div class="section">
+  <div class="spec-container" style="display: flex;">
+    <div class="spec-inner" style="background-color: #f1f1fd;">
+      <div class="section-inner">
+        <div class="form-body">
+          <app-subtitle text="Заявка на регистрацию бизнеса" style="margin-bottom: 0px; margin-block: 0px;">
+          </app-subtitle>
+          <p>Оставьте свои контакты. Мы свяжемся с вами для уточнения деталей и зарегистрируем бизнес</p>
+
+          <form [formGroup]="form" (keydown.enter)="fnSubmit()">
+
+
+            <app-binary-input label="Имя" #binaryInput formControlName="name"></app-binary-input>
+            <app-binary-input label="Телефон" #binaryInput formControlName="phone" class="phone"></app-binary-input>
+
+            <app-mat-button text="Продолжить">
+            </app-mat-button>
+
+          </form>
+
+          <p>Нажимая кнопку Продолжить, вы соглашаетесь с условиями обработки персональных данных</p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>

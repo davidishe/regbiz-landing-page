@@ -1,0 +1,48 @@
+.hero-wrapper {
+  width: 100%;
+  // height: calc(80vh - 100px);
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  display: flex;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin-bottom: 50px;
+}
+
+.glass-object {
+  width: 25px;
+  height: 25px;
+  border-radius: 80px;
+  display: block;
+  position: absolute;
+  filter: blur(25px);
+  z-index: -1;
+  backdrop-filter: blur(20px);
+  // -webkit-backdrop-filter: blur(20px);
+  opacity: 0.75;
+}
+
+/* Glassmorphism card effect */
+.hero-wrapper {
+  background-color: var(--background);
+  background: linear-gradient(
+    35deg,
+    rgba(26, 12, 217, 0.114) 0%,
+    rgba(156, 46, 154, 0.119) 35%,
+    rgba(79, 129, 204, 0.113) 67%,
+    rgba(0, 213, 255, 0.117) 100%
+  );
+}
+
+@media (max-width: 850px) {
+  .hero-wrapper {
+    padding-top: 9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-wrapper {
+    padding-top: 8rem;
+  }
+}

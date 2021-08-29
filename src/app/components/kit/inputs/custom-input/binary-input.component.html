@@ -1,0 +1,18 @@
+<!-- <div>
+  <input matInput #inputField [value]="_value" (input)="writeValue(inputField.value)" (blur)="onBlur()" />
+  {{ _decimal }}
+  <button (click)="switchValidationOnOff()">
+    Validation: {{ validationEnabled }}
+  </button>
+</div> -->
+
+<mat-form-field>
+  <mat-label>{{label}}</mat-label>
+  <input type="email" matInput #inputField [value]="_value">
+  <mat-error *ngIf="formControl?.hasError('email') && !formControl?.hasError('required')">
+    Please enter a valid email address
+  </mat-error>
+  <mat-error *ngIf="formControl?.hasError('required')">
+    Email is <strong>required</strong>
+  </mat-error>
+</mat-form-field>

@@ -1,0 +1,101 @@
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.section-inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.form-body {
+  width: 100%;
+  background-color: #f1f1fd;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+form {
+  display: grid;
+  justify-content: space-between;
+  vertical-align: bottom;
+  grid-template-columns: 40% 40% 20%;
+}
+
+app-binary-input {
+  // max-width: 250px !important;
+  // display: block;
+  padding-right: 20px;
+}
+
+app-mat-button {
+  text-decoration: none;
+  top: 17px;
+  // margin-left: 10px;
+  position: relative;
+}
+
+.phone {
+  margin-left: 10px;
+}
+
+p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: 0.8;
+  font-size: 14px;
+  display: block;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  form {
+    display: flex;
+  }
+
+  app-binary-input {
+    max-width: 400px !important;
+    display: block;
+  }
+}
+
+@media (max-width: 670px) {
+  form {
+    display: block;
+  }
+
+  p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    // top: -50px;
+    position: relative;
+  }
+
+  .phone {
+    margin-left: 0px;
+  }
+
+  app-mat-button {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+    display: block;
+  }
+
+  .form-body {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .form-body {
+    padding: 20px;
+  }
+}
